@@ -1,0 +1,100 @@
+body{
+  margin: 0px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+header .contenedor{/*El punto antes de "contenedor" indica que se trata de una clase si hubiera un "#" no seria una clase, seria un id*/
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+header ul{
+  display: flex;
+}
+header ul li{
+  list-style: none;
+  margin-right: 15px;
+}
+.contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+header {
+ background-image: linear-gradient(rgba(255, 204, 255,0.75),rgba(255,128, 255,0.95)),url(../imagenes/fondo.jpg);
+ /*Cambiar imagen por una mejor o mas adecuada*/
+ height: 100vh;
+ background-size: cover;
+}
+ #contenedor-titulo-flex{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ margin-top: 18vh;
+ color: #fff;
+}
+h1{
+  font-size: 60px;
+  margin: 0px;
+}
+.contenedor-titulo a , #sobre-mi a{
+  display: inline-block;
+  text-decoration: none;
+  background-color:#FA8072 ;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 30px;/*El padding se refiere al espaciado entre el boton y el testo de adentro*/
+  /*El margin se refiere al espaciado con el exterior*/
+}
+.contenedor-titulo a:hover{
+  background-color: #333333;
+}
+nav ul li a{
+  color: #fff;
+}/*Esto pone los elementos de la lista de color blanco*/
+
+/*AQUI EMPIEZA LOS ESTILOS DE LA SECCION DE "SOBRE MI"*/
+h3{
+ text-align:center;
+ font-size: 60px;
+ font-weight: normal;
+}
+#sobre-mi .contenedor-sobremi{
+ display: flex;
+ justify-content: space-around;
+}
+#sobre-mi .texto{
+ width: 40%;
+}
+/*Inicio de seccion Papas-----------------------------------------*/
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #fff;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+.servicio {
+  width: 30%;
+  padding: 34px,30px,38px,30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.servicio h4 {
+ font-size: 30px;
+ margin: 0;
+}
+.servicio p{
+  height: 200px;
+  margin-bottom: 60px;
+}
+.contenedor-servicios .rosa {
+background:linear-gradient(to top, #fcecfc 0%,#ff7cd8 100%);
+box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.72);
+}
+.contenedor-servicios .celeste {
+background: linear-gradient(to top, #e4f5fc 0%,#2ab0ed 100%);
+box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.72);
+}
